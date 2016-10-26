@@ -1,0 +1,16 @@
+{
+  "name": "numric",
+  "version": "0.0.0",
+  "dependencies": {
+    "harden": {
+      "version": "0.3.5",
+      "from": "harden@latest",
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.3.5.tgz"
+    },
+    "truly": {
+      "version": "0.0.1",
+      "from": "truly@latest",
+      "resolved": "https://registry.npmjs.org/truly/-/truly-0.0.1.tgz"
+    }
+  }
+}

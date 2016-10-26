@@ -1,0 +1,30 @@
+{
+  "name": "numric",
+  "version": "0.0.0",
+  "description": "Check if value contains all numeric literals.",
+  "main": "numric.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/numric.git"
+  },
+  "keywords": [
+    "check",
+    "value",
+    "numeric",
+    "literal",
+    "numric"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/numric/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/numric#readme",
+  "dependencies": {
+    "harden": "^0.3.5",
+    "truly": "0.0.1"
+  }
+}
