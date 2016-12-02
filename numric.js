@@ -34,6 +34,9 @@
 			"file": "numric.js",
 			"module": "numric",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/numric.git",
 			"test": "numric-test.js",
@@ -53,24 +56,11 @@
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var harden = require( "harden" );
-	var truly = require( "truly" );
-}
+const harden = require( "harden" );
+const protype = require( "protype" );
+const truly = require( "truly" );
 
-if( typeof window != "undefined" &&
-	!( "harden" in window ) )
-{
-	throw new Error( "harden is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "truly" in window ) )
-{
-	throw new Error( "truly is not defined" );
-}
-
-var numric = function numric( value ){
+const numric = function numric( value ){
 	/*;
 		@meta-configuration:
 			{
@@ -82,7 +72,7 @@ var numric = function numric( value ){
 		@end-meta-configuration
 	*/
 
-	if( typeof value != "string" && typeof value != "number" ){
+	if( !protype( value, STRING ) && !protype( value, NUMBER ) ){
 		throw new Error( "invalid value" );
 	}
 
@@ -91,6 +81,4 @@ var numric = function numric( value ){
 
 harden.bind( numric )( "NUMERIC_PATTERN", /^\d+\.?\d*$/ );
 
-if( typeof module != "undefined" ){
-	module.exports = numric;
-}
+module.exports = numric;
