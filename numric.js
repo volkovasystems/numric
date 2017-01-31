@@ -51,6 +51,7 @@
 	@include:
 		{
 			"harden": "harden",
+			"protype": "protype",
 			"truly": "truly"
 		}
 	@end-include
