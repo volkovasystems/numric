@@ -1,6 +1,6 @@
 {
   "name": "numric",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Check if value contains all numeric literals.",
   "main": "numric.js",
   "support": "numric.support.js",
