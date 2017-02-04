@@ -1,6 +1,5 @@
 yarn add \
 babel-runtime \
-harden \
 protype \
 truly \
 --save && \
@@ -13,7 +12,6 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-harden \
 protype \
 truly \
 --save

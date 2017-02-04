@@ -50,16 +50,16 @@
 
 	@include:
 		{
-			"harden": "harden",
 			"protype": "protype",
 			"truly": "truly"
 		}
 	@end-include
 */
 
-const harden = require( "harden" );
 const protype = require( "protype" );
 const truly = require( "truly" );
+
+const NUMERIC_PATTERN = /^[\+\-]?\d*\.?\d+(?:[Ee][\+\-]?\d+)?$/;
 
 const numric = function numric( value ){
 	/*;
@@ -73,13 +73,11 @@ const numric = function numric( value ){
 		@end-meta-configuration
 	*/
 
-	if( !protype( value, STRING ) && !protype( value, NUMBER ) ){
+	if( !protype( value, STRING + NUMBER ) ){
 		throw new Error( "invalid value" );
 	}
 
-	return truly( value ) && numric.NUMERIC_PATTERN.test( value.toString( ) );
+	return truly( value ) && NUMERIC_PATTERN.test( value.toString( ) );
 };
-
-harden.bind( numric )( "NUMERIC_PATTERN", /^\d+\.?\d*$/ );
 
 module.exports = numric;
