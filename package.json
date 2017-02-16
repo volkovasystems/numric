@@ -1,13 +1,13 @@
 {
   "name": "numric",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Check if value contains all numeric literals.",
   "main": "numric.js",
   "support": "numric.support.js",
   "deploy": "numric.deploy.js",
   "browser": "numric.deploy.js",
   "scripts": {
-    "build": "babel numric.js -o numric.support.js && webpack",
+    "build": "babel numric.js --out-file numric.support.js --source-maps && webpack --progress",
     "test": "mocha numric-test.js"
   },
   "repository": {
@@ -31,14 +31,14 @@
   },
   "homepage": "https://github.com/volkovasystems/numric#readme",
   "dependencies": {
-    "babel-runtime": "^6.22.0",
-    "protype": "^0.14.0",
-    "truly": "^0.9.0"
+    "babel-runtime": "^6.23.0",
+    "protype": "^0.17.0",
+    "truly": "^0.13.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-core": "^6.22.1",
-    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
     "source-map-loader": "^0.1.6",
     "webpack": "^2.2.1"
