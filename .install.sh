@@ -1,6 +1,7 @@
 yarn add \
 babel-runtime \
 protype \
+stringe \
 truly \
 --save && \
 yarn add \
@@ -13,5 +14,7 @@ webpack \
 --dev && \
 bower install \
 protype \
+stringe \
 truly \
---save
+--save \
+--force-latest
