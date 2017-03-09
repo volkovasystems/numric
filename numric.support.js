@@ -75,7 +75,7 @@ var numric = function numric(value) {
                                      	@end-meta-configuration
                                      */
 
-	if (!protype(value, STRING, NUMBER)) {
+	if (!protype(value, STRING + NUMBER)) {
 		throw new Error("invalid value");
 	}
 

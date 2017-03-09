@@ -78,7 +78,7 @@ const numric = function numric( value ){
 	if( !protype( value, STRING + NUMBER ) ){
 		throw new Error( "invalid value" );
 	}
-	console.log( "Stringe value", stringe( value ) );
+	
 	return truly( value ) && NUMERIC_PATTERN.test( stringe( value ) );
 };
 
