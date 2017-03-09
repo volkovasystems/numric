@@ -51,12 +51,14 @@
 	@include:
 		{
 			"protype": "protype",
+			"stringe": "stringe",
 			"truly": "truly"
 		}
 	@end-include
 */
 
 const protype = require( "protype" );
+const stringe = require( "stringe" );
 const truly = require( "truly" );
 
 const NUMERIC_PATTERN = /^[\+\-]?\d*\.?\d+(?:[Ee][\+\-]?\d+)?$/;
@@ -76,8 +78,8 @@ const numric = function numric( value ){
 	if( !protype( value, STRING + NUMBER ) ){
 		throw new Error( "invalid value" );
 	}
-
-	return truly( value ) && NUMERIC_PATTERN.test( value.toString( ) );
+	console.log( "Stringe value", stringe( value ) );
+	return truly( value ) && NUMERIC_PATTERN.test( stringe( value ) );
 };
 
 module.exports = numric;
