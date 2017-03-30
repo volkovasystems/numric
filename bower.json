@@ -1,6 +1,6 @@
 {
   "name": "numric",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Check if value contains all numeric literals.",
   "main": "numric.deploy.js",
   "support": "numric.support.js",
@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "protype": "^0.21.0",
-    "stringe": "^0.1.0",
+    "stringe": "^0.2.0",
     "truly": "^0.17.0"
   }
 }
