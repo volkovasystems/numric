@@ -1,8 +1,32 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./numric.deploy.js">
-		</script>
+		<title>numric unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./numric.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "numric unit test", function( assert ) {
+
+				assert.equal( numric( 9 ), true, "should be true" );
+
+				assert.equal( numric( "9" ), true, "should be true" );
+
+				assert.equal( numric( "a9" ), false, "should be false" );
+
+				assert.equal( numric( "abc" ), false, "should be false" );
+
+			} );
+		</script>
+	</body>
 </html>

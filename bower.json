@@ -1,12 +1,13 @@
 {
   "name": "numric",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "Check if value contains all numeric literals.",
   "main": "numric.deploy.js",
   "support": "numric.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
