@@ -2,6 +2,7 @@
 
 const webpack = require( "webpack" );
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const ModuleConcatenationPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 module.exports = {
 	"entry": "./numric.support.js",
@@ -40,12 +41,17 @@ module.exports = {
 			"compress": {
 				"keep_fargs": true,
 				"keep_fnames": true,
-				"warnings": false
+				"keep_infinity": true,
+				"warnings": false,
+				"passes": 3
+			},
+			"mangle": {
+				"keep_fnames": true
 			},
 			"comments": false,
-			"sourceMap": true,
-			"mangle": false
-		} )
+			"sourceMap": true
+		} ),
+		new ModuleConcatenationPlugin( )
 	],
 	"devtool": "#source-map"
 };

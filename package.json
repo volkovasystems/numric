@@ -1,48 +1,76 @@
 {
-  "name": "numric",
-  "version": "0.16.0",
-  "description": "Check if value contains all numeric literals.",
-  "main": "numric.js",
-  "support": "numric.support.js",
-  "deploy": "numric.deploy.js",
-  "browser": "numric.deploy.js",
-  "scripts": {
-    "build": "babel numric.js --out-file numric.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha numric-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/numric.git"
-  },
-  "keywords": [
-    "check",
-    "value",
-    "numeric",
-    "literal",
-    "numric"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/numric/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/numric#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "protype": "^0.22.0",
-    "stringe": "^0.4.0",
-    "truly": "^0.19.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.0.0"
-  }
+	"name": "numric",
+	"version": "0.17.0",
+	"description": "Check if value contains all numeric literals.",
+	"main": "numric.js",
+	"support": "numric.support.js",
+	"deploy": "numric.deploy.js",
+	"browser": "numric.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"support:build": "gulp --module numric --all",
+		"deploy:build": "webpack --config webpack.build.js --progress --display-modules",
+		"build": "npm run pristine && npm run support:build && npm run deploy:build",
+		"support:test": "gulp --module test --all",
+		"deploy:test": "webpack --config webpack.test.js --progress --display-modules",
+		"build:test": "npm run support:test && npm run deploy:test",
+		"test:server": "mocha test.js",
+		"test:client": "./node_modules/.bin/wdio wdio.conf.js && jesy apply test.json",
+		"pretest": "npm run build:test",
+		"test": "npm run test:server && npm run test:client",
+		"formal": "jesy apply '*.json'",
+		"deploy": "npm run build && npm run test && npm run formal"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/numric.git"
+	},
+	"keywords": [
+		"check",
+		"value",
+		"numeric",
+		"literal",
+		"numric"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/numric/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/numric#readme",
+	"dependencies": {
+		"babel-runtime": "^6.23.0",
+		"protype": "^0.22.0",
+		"stringe": "^0.4.0",
+		"truly": "^0.19.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"del": "^3.0.0",
+		"electron": "^1.6.11",
+		"gulp": "^3.9.1",
+		"gulp-babel": "^6.1.2",
+		"gulp-changed": "^3.1.0",
+		"gulp-debug": "^3.1.0",
+		"gulp-plumber": "^1.1.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-replace": "^0.6.1",
+		"gulp-sourcemaps": "^2.6.0",
+		"mocha": "^3.4.2",
+		"should": "^11.2.1",
+		"source-map-loader": "^0.2.1",
+		"wdio-json-reporter": "^0.2.1",
+		"wdio-mocha-framework": "^0.5.10",
+		"wdio-selenium-standalone-service": "^0.0.9",
+		"webdriverio": "^4.8.0",
+		"webpack": "^3.2.0",
+		"yargs": "^8.0.2"
+	}
 }

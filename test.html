@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>numric unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:numric</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./numric.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "numric unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( numric( 9 ), true, "should be true" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.equal( numric( "9" ), true, "should be true" );
-
-				assert.equal( numric( "a9" ), false, "should be false" );
-
-				assert.equal( numric( "abc" ), false, "should be false" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
