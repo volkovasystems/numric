@@ -63,7 +63,10 @@ const numric = require( "./numric.js" );
 
 
 
+
+
 describe( "numric", ( ) => {
+	//: @!bridge:
 	describe( "`numric( 123 )`", ( ) => it( "should return true", ( ) => assert.equal( numric( 123 ), true ) ) );
 
 	describe( "`numric( '123' )`", ( ) => it( "should return true", ( ) => assert.equal( numric( "123" ), true ) ) );
@@ -73,4 +76,7 @@ describe( "numric", ( ) => {
 	describe( "`numric( '0b1010101' )`", ( ) => it( "should return true", ( ) => assert.equal( numric( "0b1010101" ), true ) ) );
 
 	describe( "`numric( )`", ( ) => it( "should return false", ( ) => assert.equal( numric( ), false ) ) );
+	//: @end-bridge
+
+	
 } );

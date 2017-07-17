@@ -1,0 +1,83 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-07-17T18:07:28.190Z",
+	"end": "2017-07-17T18:08:53.656Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		}
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "numric",
+			"duration": 0,
+			"start": "2017-07-17T18:08:53.376Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "numric",
+			"duration": 98,
+			"start": "2017-07-17T18:08:53.376Z",
+			"end": "2017-07-17T18:08:53.474Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-07-17T18:08:53.378Z",
+					"end": "2017-07-17T18:08:53.378Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "numric",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-17T18:08:53.473Z",
+					"end": "2017-07-17T18:08:53.473Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "numric",
+					"associatedTest": "should return true"
+				},
+				{
+					"start": "2017-07-17T18:08:53.474Z",
+					"end": "2017-07-17T18:08:53.474Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "numric"
+				}
+			]
+		},
+		{
+			"name": "`numric( 123 )`",
+			"duration": 97,
+			"start": "2017-07-17T18:08:53.377Z",
+			"end": "2017-07-17T18:08:53.474Z",
+			"tests": [
+				{
+					"name": "should return true",
+					"start": "2017-07-17T18:08:53.377Z",
+					"end": "2017-07-17T18:08:53.473Z",
+					"duration": 96,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

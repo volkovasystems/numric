@@ -1,6 +1,11 @@
 # numric
 Check if value contains all numeric literals.
 
+### Usage
+`numric( <value> )`
+
+Pass a `string` or `number` type value and this will evaluate to `true` or `false` if the value contains all the ECMAscript specification for numeric literals.
+
 ### Note
 >The following global dependencies should be installed to speed up development procedures.
 1. `npm install flxc@latest --global`
@@ -27,10 +32,6 @@ Check if value contains all numeric literals.
 
 ### Test
 * Run `npm run test`
-
-###### Atom & WallabyJS Test Flow
-1. Install `wallabyjs` for `atom`, run `apm install atom-wallaby`
-2. `Ctrl/Cmd + Shft + T R`
 
 ###### WebDriverIO Test Flow
 * (Non-Windows/Debian based) If you don't have JavaRE installed, run, `npm install njava@latest --global`

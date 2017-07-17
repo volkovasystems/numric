@@ -37,6 +37,8 @@ module.exports = {
 		"filename": "test.deploy.js"
 	},
 	"plugins": [
+		new ModuleConcatenationPlugin( ),
+
 		new UglifyJsPlugin( {
 			"compress": {
 				"keep_fargs": true,
@@ -50,8 +52,7 @@ module.exports = {
 			},
 			"comments": false,
 			"sourceMap": true
-		} ),
-		new ModuleConcatenationPlugin( )
+		} )
 	],
 	"devtool": "#source-map"
 };

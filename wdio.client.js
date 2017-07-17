@@ -1,5 +1,5 @@
 exports.config = {
-	"specs": [ "./test.deploy.js" ],
+	"specs": [ "./test.bridge.js" ],
 	"maxInstances": 10,
 	"capabilities": [
 		{
@@ -26,11 +26,8 @@ exports.config = {
 	"reporters": [ "json" ],
 	"reporterOptions": {
 		"outputDir": "./",
-		"filename": "test",
+		"filename": "test.client",
 		"combined": true
 	},
-	"mochaOpts": { "ui": "bdd" },
-	"onComplete": ( ) => {
-		
-	}
-}
+	"mochaOpts": { "ui": "bdd" }
+};
