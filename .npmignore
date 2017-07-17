@@ -1,11 +1,14 @@
 .babelrc
 .install.sh
+bridge.html
 gulpfile.js
 test.deploy.js
 test.deploy.js.map
 test.html
 test.js
 test.js.map
+test.bridge.js
+test.bridge.js.map
 test.client.json
 test.server.json
 test.module.js

@@ -1,5 +1,5 @@
 exports.config = {
-	"specs": [ "./test.deploy.js" ],
+	"specs": [ "./test.bridge.js" ],
 	"maxInstances": 10,
 	"capabilities": [
 		{

@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 5,
+		"passed": 1,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-07-17T02:12:02.861Z",
-	"end": "2017-07-17T02:13:28.617Z",
+	"start": "2017-07-17T18:07:28.190Z",
+	"end": "2017-07-17T18:08:53.656Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -27,100 +27,36 @@
 		{
 			"name": "numric",
 			"duration": 0,
-			"start": "2017-07-17T02:13:28.419Z",
+			"start": "2017-07-17T18:08:53.376Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "numric",
-			"duration": 12,
-			"start": "2017-07-17T02:13:28.419Z",
-			"end": "2017-07-17T02:13:28.431Z",
+			"duration": 98,
+			"start": "2017-07-17T18:08:53.376Z",
+			"end": "2017-07-17T18:08:53.474Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-07-17T02:13:28.421Z",
-					"end": "2017-07-17T02:13:28.421Z",
+					"start": "2017-07-17T18:08:53.378Z",
+					"end": "2017-07-17T18:08:53.378Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "numric",
 					"associatedTest": "should return true"
 				},
 				{
-					"start": "2017-07-17T02:13:28.423Z",
-					"end": "2017-07-17T02:13:28.423Z",
+					"start": "2017-07-17T18:08:53.473Z",
+					"end": "2017-07-17T18:08:53.473Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "numric",
 					"associatedTest": "should return true"
 				},
 				{
-					"start": "2017-07-17T02:13:28.427Z",
-					"end": "2017-07-17T02:13:28.427Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return true"
-				},
-				{
-					"start": "2017-07-17T02:13:28.428Z",
-					"end": "2017-07-17T02:13:28.428Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return true"
-				},
-				{
-					"start": "2017-07-17T02:13:28.428Z",
-					"end": "2017-07-17T02:13:28.428Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return true"
-				},
-				{
-					"start": "2017-07-17T02:13:28.429Z",
-					"end": "2017-07-17T02:13:28.429Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return true"
-				},
-				{
-					"start": "2017-07-17T02:13:28.429Z",
-					"end": "2017-07-17T02:13:28.429Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return true"
-				},
-				{
-					"start": "2017-07-17T02:13:28.430Z",
-					"end": "2017-07-17T02:13:28.430Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return true"
-				},
-				{
-					"start": "2017-07-17T02:13:28.430Z",
-					"end": "2017-07-17T02:13:28.430Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return false"
-				},
-				{
-					"start": "2017-07-17T02:13:28.430Z",
-					"end": "2017-07-17T02:13:28.430Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "numric",
-					"associatedTest": "should return false"
-				},
-				{
-					"start": "2017-07-17T02:13:28.431Z",
-					"end": "2017-07-17T02:13:28.431Z",
+					"start": "2017-07-17T18:08:53.474Z",
+					"end": "2017-07-17T18:08:53.474Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "numric"
@@ -129,79 +65,15 @@
 		},
 		{
 			"name": "`numric( 123 )`",
-			"duration": 6,
-			"start": "2017-07-17T02:13:28.420Z",
-			"end": "2017-07-17T02:13:28.426Z",
+			"duration": 97,
+			"start": "2017-07-17T18:08:53.377Z",
+			"end": "2017-07-17T18:08:53.474Z",
 			"tests": [
 				{
 					"name": "should return true",
-					"start": "2017-07-17T02:13:28.420Z",
-					"end": "2017-07-17T02:13:28.423Z",
-					"duration": 3,
-					"state": "pass"
-				}
-			],
-			"hooks": []
-		},
-		{
-			"name": "`numric( '123' )`",
-			"duration": 2,
-			"start": "2017-07-17T02:13:28.426Z",
-			"end": "2017-07-17T02:13:28.428Z",
-			"tests": [
-				{
-					"name": "should return true",
-					"start": "2017-07-17T02:13:28.427Z",
-					"end": "2017-07-17T02:13:28.428Z",
-					"duration": 1,
-					"state": "pass"
-				}
-			],
-			"hooks": []
-		},
-		{
-			"name": "`numric( '0x1010' )`",
-			"duration": 1,
-			"start": "2017-07-17T02:13:28.428Z",
-			"end": "2017-07-17T02:13:28.429Z",
-			"tests": [
-				{
-					"name": "should return true",
-					"start": "2017-07-17T02:13:28.428Z",
-					"end": "2017-07-17T02:13:28.429Z",
-					"duration": 1,
-					"state": "pass"
-				}
-			],
-			"hooks": []
-		},
-		{
-			"name": "`numric( '0b1010101' )`",
-			"duration": 1,
-			"start": "2017-07-17T02:13:28.429Z",
-			"end": "2017-07-17T02:13:28.430Z",
-			"tests": [
-				{
-					"name": "should return true",
-					"start": "2017-07-17T02:13:28.429Z",
-					"end": "2017-07-17T02:13:28.430Z",
-					"duration": 1,
-					"state": "pass"
-				}
-			],
-			"hooks": []
-		},
-		{
-			"name": "`numric( )`",
-			"duration": 1,
-			"start": "2017-07-17T02:13:28.430Z",
-			"end": "2017-07-17T02:13:28.431Z",
-			"tests": [
-				{
-					"name": "should return false",
-					"start": "2017-07-17T02:13:28.430Z",
-					"end": "2017-07-17T02:13:28.430Z",
-					"duration": 0,
+					"start": "2017-07-17T18:08:53.377Z",
+					"end": "2017-07-17T18:08:53.473Z",
+					"duration": 96,
 					"state": "pass"
 				}
 			],

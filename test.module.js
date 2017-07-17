@@ -65,7 +65,12 @@ const numric = require( "./numric.js" );
 const numric = require( "./numric.support.js" );
 //: @end-client
 
+//: @bridge:
+const path = require( "path" );
+//: @end-bridge
+
 describe( "numric", ( ) => {
+	//: @!bridge:
 	describe( "`numric( 123 )`", ( ) => it( "should return true", ( ) => assert.equal( numric( 123 ), true ) ) );
 
 	describe( "`numric( '123' )`", ( ) => it( "should return true", ( ) => assert.equal( numric( "123" ), true ) ) );
@@ -75,4 +80,19 @@ describe( "numric", ( ) => {
 	describe( "`numric( '0b1010101' )`", ( ) => it( "should return true", ( ) => assert.equal( numric( "0b1010101" ), true ) ) );
 
 	describe( "`numric( )`", ( ) => it( "should return false", ( ) => assert.equal( numric( ), false ) ) );
+	//: @end-bridge
+
+	//: @bridge:
+	let directory = __dirname;
+	let testBridge = path.resolve( directory, "bridge.html" );
+	let bridgeURL = `file://${ testBridge }`;
+
+	describe( "`numric( 123 )`", ( ) => {
+		it( "should return true", ( ) => {
+			let result = browser.url( bridgeURL ).execute( ( ) => numric( 123 ) );
+
+			assert.equal( result.value, true );
+		} );
+	} );
+	//: @end-bridge
 } );
