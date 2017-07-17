@@ -1,6 +1,8 @@
 "use strict";
 
 const webpack = require( "webpack" );
+
+const DefinePlugin = webpack.DefinePlugin;
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const ModuleConcatenationPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
@@ -37,6 +39,12 @@ module.exports = {
 		"filename": "numric.deploy.js"
 	},
 	"plugins": [
+		new DefinePlugin( {
+			"process.env.NODE_ENV": '"production"'
+		} ),
+
+		new ModuleConcatenationPlugin( ),
+
 		new UglifyJsPlugin( {
 			"compress": {
 				"keep_fargs": true,
@@ -50,8 +58,7 @@ module.exports = {
 			},
 			"comments": false,
 			"sourceMap": true
-		} ),
-		new ModuleConcatenationPlugin( )
+		} )
 	],
 	"devtool": "#source-map"
 };

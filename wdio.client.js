@@ -26,11 +26,8 @@ exports.config = {
 	"reporters": [ "json" ],
 	"reporterOptions": {
 		"outputDir": "./",
-		"filename": "test",
+		"filename": "test.client",
 		"combined": true
 	},
-	"mochaOpts": { "ui": "bdd" },
-	"onComplete": ( ) => {
-		
-	}
-}
+	"mochaOpts": { "ui": "bdd" }
+};
