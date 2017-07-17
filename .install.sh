@@ -9,7 +9,6 @@ babel-cli \
 babel-core \
 babel-plugin-transform-runtime \
 babel-preset-latest \
-del \
 electron \
 gulp \
 gulp-babel \

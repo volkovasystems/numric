@@ -3,7 +3,6 @@
 const babel = require( "gulp-babel" );
 const changed = require( "gulp-changed" );
 const debug = require( "gulp-debug" );
-const del = require( "del" );
 const gulp = require( "gulp" );
 const plumber = require( "gulp-plumber" );
 const rename = require( "gulp-rename" );
