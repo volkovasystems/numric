@@ -1,88 +1,88 @@
 {
-	"stats": {
-		"suites": 6,
-		"tests": 5,
-		"passes": 5,
-		"pending": 0,
-		"failures": 0,
-		"start": "2017-07-17T18:32:30.496Z",
-		"end": "2017-07-17T18:32:30.501Z",
-		"duration": 5
-	},
-	"tests": [
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( 123 )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( '123' )` should return true",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( '0x1010' )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( '0b1010101' )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "numric `numric( )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	],
-	"pending": [],
-	"failures": [],
-	"passes": [
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( 123 )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( '123' )` should return true",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( '0x1010' )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return true",
-			"fullTitle": "numric `numric( '0b1010101' )` should return true",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return false",
-			"fullTitle": "numric `numric( )` should return false",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		}
-	]
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-07-21T02:37:40.843Z",
+    "end": "2017-07-21T02:37:40.853Z",
+    "duration": 10
+  },
+  "tests": [
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( 123 )` should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( '123' )` should return true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( '0x1010' )` should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( '0b1010101' )` should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return false",
+      "fullTitle": "numric `numric( )` should return false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( 123 )` should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( '123' )` should return true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( '0x1010' )` should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "numric `numric( '0b1010101' )` should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return false",
+      "fullTitle": "numric `numric( )` should return false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
