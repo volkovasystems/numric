@@ -5,15 +5,15 @@
 		"passes": 5,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-07-17T18:32:30.496Z",
-		"end": "2017-07-17T18:32:30.501Z",
+		"start": "2017-08-11T09:07:26.473Z",
+		"end": "2017-08-11T09:07:26.478Z",
 		"duration": 5
 	},
 	"tests": [
 		{
 			"title": "should return true",
 			"fullTitle": "numric `numric( 123 )` should return true",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -52,7 +52,7 @@
 		{
 			"title": "should return true",
 			"fullTitle": "numric `numric( 123 )` should return true",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
